@@ -5,3 +5,4 @@ Bundle-Vendor: Nuxeo
 Nuxeo-RequiredBy: org.nuxeo.ecm.war
 Bundle-Name: <%- name %>
 Bundle-SymbolicName: <%- name %>;singleton:=true
+Nuxeo-Component: OSGI-INF/authentication-contrib.xml
