@@ -1,0 +1,3 @@
+<install>
+  <copy file="${package.root}/bundle.jar" tofile="${env.bundles}/<%- name -%>-<%- version -%>.jar" />
+</install>

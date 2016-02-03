@@ -1,0 +1,15 @@
+#!/usr/bin/env node
+
+'use strict';
+
+var pkg = require('../package.json'),
+    program = require('commander');
+
+program.version(pkg.version);
+
+program
+  .command('package [folder]')
+  .description('build a Nuxeo package for distribution')
+  .action(require('../lib/package'));
+
+program.parse(process.argv);

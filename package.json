@@ -1,0 +1,16 @@
+{
+  "name": "@nuxeo/nuxeo-tools",
+  "version": "1.0.0",
+  "description": "Nuxeo Tools",
+  "author": "Nelson Silva <nsilva@nuxeo.com>",
+  "license": "Apache-2.0",
+  "bin": {
+    "nuxeo": "bin/nuxeo"
+  },
+  "dependencies": {
+    "archiver": "^0.21.0",
+    "commander": "^2.9.0",
+    "mem-fs": "^1.1.2",
+    "mem-fs-editor": "^2.1.0"
+  }
+}

@@ -1,0 +1,20 @@
+<package type="addon" name="<%= name %>" version="<%= version %>">
+  <title><%= name %></title>
+  <description>
+    <p><%= description %></p>
+  </description>
+  <home-page><%= homepage %></home-page>
+  <vendor><%= vendor %></vendor>
+  <installer restart="true" />
+  <uninstaller restart="true" />
+  <nuxeo-validation>nuxeo_certified</nuxeo-validation>
+  <production-state>testing</production-state>
+  <supported>true</supported>
+  <platforms>
+    <% nuxeo.platforms.forEach(function(platform) { %>
+      <platform><%= platform -%></platform>
+    <% }); %>
+  </platforms>
+  <license><%= license %></license>
+  <visibility>PUBLIC</visibility>
+</package>
